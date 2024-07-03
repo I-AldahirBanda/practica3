@@ -9,7 +9,8 @@ const connection = mysql.createConnection({
     password: '',
     database: 'nivel2'
   });
-  
+
+// Configuración de la conexión a la base de datos MySQL
 connection.connect((err) => {
     if (err) {
       console.error('Error conectando a la base de datos:', err.stack);
