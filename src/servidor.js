@@ -1,3 +1,5 @@
+// Servidor HTTP básico en Node.js que muestra datos de una tabla MySQL
+
 import http from 'node:http';
 import mysql from 'mysql2';
 
