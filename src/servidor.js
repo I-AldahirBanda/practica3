@@ -19,6 +19,7 @@ connection.connect((err) => {
     console.log('Conexión a la base de datos establecida con éxito.');
 });
 
+// Definición del servidor HTTP y manejo de solicitudes
 const server = http.createServer((req, res) => {
     if (req.method === 'GET' && req.url === '/datos') {
       connection.query('SELECT * FROM usuarios', (error, results) => {
